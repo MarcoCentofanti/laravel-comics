@@ -1,5 +1,5 @@
 
-<div>
+<div class="bg-white">
     <nav class="d-flex align-items-center justify-content-between">
         <div>
             <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">

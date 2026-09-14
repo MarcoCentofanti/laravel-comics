@@ -8,9 +8,13 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container bg-black">
         @include('partials.header')
-        @yield('content')
+        @yield('jumbo')
+        @yield('banner')
+        <div class="d-flex row">
+            @yield('content')
+        </div>
         @include('partials.footer')
     </div>
     
