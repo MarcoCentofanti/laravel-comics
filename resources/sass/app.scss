@@ -7,12 +7,18 @@
 // Bootstrap
 @import "bootstrap/scss/bootstrap";
 
+.site-header nav {
+    min-height: 105px;
+}
+
 .nav-text a {
     color: #1c1c1c;
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 700;
-    padding: 2rem 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
     border-bottom: 4px solid transparent;
 }
 
@@ -31,4 +37,166 @@
     object-fit: cover;
     object-position: top;
     display: block;
+}
+
+.comics-section {
+    padding-bottom: 3rem;
+    background-color: #1c1c1c;
+}
+
+.current-series {
+    font-size: 1.25rem;
+    font-weight: 700;
+    transform: translateY(-50%);
+}
+
+.comic-cover {
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.comic-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.footer-action {
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.footer-action-icon {
+    width: 50px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.footer-action-icon--wide {
+    width: 60px;
+}
+
+.footer-links {
+    position: relative;
+    min-height: 370px;
+    overflow: hidden;
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-links-content {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-column h2 {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-column a {
+    color: #959595;
+    text-decoration: none;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-big-logo {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    right: -80px;
+    width: 600px;
+    max-width: none;
+    transform: translateY(-50%) rotate(-15deg);
+    pointer-events: none;
+}
+
+.footer-bottom {
+    background-color: #303030;
+}
+
+.signup-button {
+    padding: 0.75rem 1rem;
+    border: 2px solid #0282f9;
+    color: white;
+    font-weight: 700;
+}
+
+.signup-button:hover {
+    background-color: #0282f9;
+    color: white;
+}
+
+.social-links > span {
+    color: #0282f9;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+}
+
+@media (max-width: 991.98px) {
+    .site-header nav {
+        min-height: 80px;
+    }
+
+    .site-logo {
+        width: 60px;
+    }
+
+    .nav-text {
+        max-width: calc(100% - 80px);
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav-text a {
+        white-space: nowrap;
+    }
+
+    .hero-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-img {
+        height: 220px;
+    }
+
+    .comic-cover {
+        height: 230px;
+    }
+
+    .footer-action {
+        justify-content: flex-start !important;
+    }
+
+    .footer-links {
+        min-height: auto;
+    }
+
+    .footer-big-logo {
+        right: -170px;
+        width: 460px;
+        opacity: 0.45;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
