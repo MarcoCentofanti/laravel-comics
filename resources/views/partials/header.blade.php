@@ -1,5 +1,5 @@
 
-<div class="bg-white">
+<header class="bg-white">
     <nav class="container d-flex align-items-center justify-content-between py-3">
         <div>
             <img class="site-logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
@@ -21,4 +21,4 @@
     </nav>
 
     
-</div>
+</header>

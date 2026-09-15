@@ -5,7 +5,7 @@
 @endsection
 
 @section('jumbo')
-    <img class="w-auto" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+    <img class="w-100 hero-img" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
 @endsection
 
 
