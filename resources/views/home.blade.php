@@ -8,25 +8,33 @@
     <img class="w-auto" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
 @endsection
 
-@section('banner')
-    <h3 class="d-block bg-primary text-white">current series</h3>
-@endsection
+
+
 
 @php
     $comics = config('comics');
-
-@endphp
+    
+    @endphp
 @section('content')
-    @foreach ($comics as $comic)
-    <div class="col-2">
-        <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
-        <h1 class="text-center fs-6">{{$comic['title']}}</h1>
-    </div>
-        
-    @endforeach
-    <div class="d-flex justify-content-center">
+    <section class="bg-dark">
+        <div class="container">
+            <h3 class="bg-primary text-white">current series</h3>
+            <div class="row">
 
-        <button class="btn btn-primary rounded-0">LOAD MORE</button>
-    </div>
+                @foreach ($comics as $comic)
+                <div class="col-2">
+                    <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
+                    <h2 class="text-center fs-6">{{$comic['title']}}</h2>
+                </div>
+                @endforeach
+
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                
+                <button class="btn btn-primary rounded-0">LOAD MORE</button>
+            </div>
+        </div>
+    </section>
         
 @endsection

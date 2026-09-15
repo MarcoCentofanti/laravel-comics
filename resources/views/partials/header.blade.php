@@ -1,12 +1,12 @@
 
 <div class="bg-white">
-    <nav class="d-flex align-items-center justify-content-between">
+    <nav class="container d-flex align-items-center justify-content-between py-3">
         <div>
-            <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            <img class="site-logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
         </div>
-        <div class="nav-text">
+        <div class="nav-text d-flex align-items-center gap-4">
             <a href="">CHARACTERS</a>
-            <a href="">COMICS</a>
+            <a href="" class="active">COMICS</a>
             <a href="">MOVIES</a>
             <a href="">TV</a>
             <a href="">GAMES</a>
@@ -19,6 +19,6 @@
 
         </div>
     </nav>
-    <hr>
+
     
 </div>
